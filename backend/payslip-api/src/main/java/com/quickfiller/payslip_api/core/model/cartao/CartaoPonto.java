@@ -1,7 +1,14 @@
 package com.quickfiller.payslip_api.core.model.cartao;
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+
 import java.util.List;
 
+@Getter
+@AllArgsConstructor
+@NoArgsConstructor
 public class CartaoPonto {
 
     private List<PaginaPonto> pages;
