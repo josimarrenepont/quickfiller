@@ -35,7 +35,7 @@ public class TesseractOcrService implements OcrPort {
             return tesseract.doOCR(bufferedImage);
 
         } catch (IOException | TesseractException e) {
-            throw new OcrException("Falha ao executar OCR na imagem: " + e.getMessage());
+            throw new OcrException("Falha ao executar OCR na imagem: " + e.getMessage(), e);
         }
     }
 }
