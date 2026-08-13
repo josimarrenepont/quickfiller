@@ -1,9 +1,11 @@
 package com.quickfiller.payslip_api.planilha;
 
 import com.quickfiller.payslip_api.core.port.PlanilhaGeneratorPort;
+import org.springframework.stereotype.Component;
 
+@Component
 public class ExcelPlanilhaGenerator implements PlanilhaGeneratorPort {
-    
+
     private byte[] bytes;
 
     @Override
